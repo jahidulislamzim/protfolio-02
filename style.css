@@ -1,0 +1,218 @@
+/* Font  */
+
+@font-face {
+    font-family: "Liakot-Ekota" ;
+    src: url(font/Liakot-Ekota.ttf);
+}
+
+
+@font-face {
+    font-family:"Sirajee-Humayra" ;
+    src: url(font/Sirajee-Humayra.ttf);
+}
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.header
+{
+    min-height:100vh;
+    width:100%;
+    color:#fff;
+    background-color:#000;
+    position:relative;
+}
+
+
+nav
+{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+}
+
+
+.logo
+{
+    font-family: "Liakot-Ekota" ;
+    color:#fff;
+    text-decoration:none;
+    font-size:40px;
+    padding-top:10px;
+    margin-left:10%;
+    z-index:999;
+
+}
+
+.nav-link
+{
+    text-align:right;
+    background-color:#5c10e3;
+    padding: 10px 30px;
+    border-bottom-left-radius:20px;
+}
+
+
+.nav-link ul li 
+{
+    list-style:none;
+    padding:10px 25px;
+    display:inline-block;
+    position:relative;
+}
+
+
+.nav-link ul li a 
+{
+    font-family:"Sirajee-Humayra" ;
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+}
+
+.nav-link ul li::after
+{
+    content: " ";
+    width:0;
+    height:3px;
+    background-color:#fff;
+    display:block;
+    border-radius:50px;
+    margin:auto;
+    transition:0.5s;
+}
+
+.nav-link ul li:hover::after
+{
+    width:100%;
+}
+
+
+.left-sidebar
+{
+    width:20%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:#5c10e3;
+}
+
+
+.row
+{
+    padding:0 10%;
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    position:relative;
+    margin-top:5%;
+}
+
+
+.left-col
+{
+    flex-basis:40%;
+}
+
+
+.left-col img
+{
+    border-radius:25px;
+    cursor:pointer;
+    filter:grayscale(0);
+    transition:filter 1s;
+}
+
+.left-col img:hover
+{
+    filter:grayscale(1);
+}
+
+
+.right-col
+{
+    flex-basis:50%;
+}
+
+
+.right-col h1
+{
+    font-family: "Liakot-Ekota" ;
+    font-size:50px;
+    font-weight:100;
+
+}
+
+.right-col h1 span
+{
+    color:#5c10e3;
+}
+
+.right-col p
+{
+    color:#d1d1d1;
+    font-family:"Sirajee-Humayra" ;
+    font-weight: 100;
+    margin:20px 0 10px;
+}
+
+.right-col h3
+{
+    color:#5c10e3;
+    margin:0 0 50px;
+}
+
+.icons
+{
+    display:flex;
+    align-items:center;
+}
+
+.icon a
+{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:100px;
+    height:100px; 
+    text-decoration:none;
+    font-size:50px;
+    margin:0 15px;
+    background-size:100% 200%;
+    background-position:0 5%;
+    transition: all 0.5s;
+
+}
+
+
+.icon a:nth-child(1)
+{
+    color:#4267B2;
+    background-image:linear-gradient(#fff 50%, #4267B2 50%);
+}
+
+.icon a:nth-child(2)
+{
+    color:#1DA1F2;
+    background-image:linear-gradient(#fff 50%, #1DA1F2 50%);
+}
+
+.icon a:nth-child(3)
+{
+    color:#E1306C;
+    background-image:linear-gradient(#fff 50%, #E1306C 50%);
+}
+
+
+.icon a:hover
+{
+    color:#fff;
+    background-position:0 100%;
+}
